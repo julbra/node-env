@@ -7,6 +7,10 @@ var http = require("http"),
     sysinfo = require('./lib/sysinfo'),
     port = process.env.PORT || 8080;
 
+setInterval(function() {
+    console.log('Testing WebSocket logs... ' + Date.now());
+}, 1500);
+
 http.createServer(function(request, response) {
 
     var uri = url.parse(request.url).pathname,
