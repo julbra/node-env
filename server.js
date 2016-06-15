@@ -5,7 +5,7 @@ var http = require('http'),
     mustache = require('./lib/mustache'),
     keyprocessor = require('./lib/keyprocessor'),
     sysinfo = require('./lib/sysinfo'),
-    moment = require('./lib/moment'),
+    moment = require('moment'),
     port = process.env.PORT || 8080;
 
 setInterval(function() {
