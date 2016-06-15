@@ -1,14 +1,15 @@
-var http = require("http"),
-    url = require("url"),
-    path = require("path"),
-    fs = require("fs"),
-    mustache = require("./lib/mustache"),
-    keyprocessor = require("./lib/keyprocessor"),
+var http = require('http'),
+    url = require('url'),
+    path = require('path'),
+    fs = require('fs'),
+    mustache = require('./lib/mustache'),
+    keyprocessor = require('./lib/keyprocessor'),
     sysinfo = require('./lib/sysinfo'),
+    moment = require('./lib/moment'),
     port = process.env.PORT || 8080;
 
 setInterval(function() {
-    console.log('Testing WebSocket logs... ' + Date.now());
+    console.log('Testing WebSocket logs... The date is: ' + moment().format('MMMM Do YYYY, h:mm:ss a'));
 }, 1500);
 
 http.createServer(function(request, response) {
