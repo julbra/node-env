@@ -6,11 +6,12 @@ var http = require('http'),
     keyprocessor = require('./lib/keyprocessor'),
     sysinfo = require('./lib/sysinfo'),
     moment = require('moment'),
+    randomWords = require('random-words'),
     port = process.env.PORT || 8080;
 
 setInterval(function() {
-    console.log('Testing WebSocket logs... The date is: ' + moment().format('MMMM Do YYYY, h:mm:ss a'));
-}, 1500);
+    console.log(moment().format('MMMM Do YYYY, h:mm:ss a') + ' ' + randomWords({ min: 3, max: 10 }));
+}, 100);
 
 http.createServer(function(request, response) {
 

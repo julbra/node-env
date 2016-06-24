@@ -6,7 +6,8 @@
     "npm": "1.2.x"
   },
   "dependencies": {
-    "moment": "^2.13.0"
+    "moment": "^2.13.0",
+    "random-words": "0.0.1"
   },
   "devDependencies": {
     "hock": "1.0.x",
