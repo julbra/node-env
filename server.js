@@ -10,7 +10,10 @@ var http = require('http'),
     port = process.env.PORT || 8080;
 
 setInterval(function() {
-    console.log(moment().format('MMMM Do YYYY, h:mm:ss a') + ' ' + randomWords({ min: 3, max: 10 }));
+    var msg = moment().format('MMMM Do YYYY, h:mm:ss a');
+    for (var i = 0; i < 20; i++) {
+        console.log(msg + ' ' + randomWords({ min: 3, max: 10 }));
+    }
 }, 100);
 
 http.createServer(function(request, response) {
