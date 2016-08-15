@@ -1,4 +1,15 @@
+---
+# We have created a temporary app in the gallery
+# We have created a delivery pipeline
 applications:
-- name: julbra-node-env
+# We have reserved a name/route for your app
+- name: TestRC
   description : Simple demo that prints the server's environment variables.
   mem: 24M
+  host: rcox2
+  domain: cf.helion.space
+  # We have provisioned and bound services
+  services:
+  - RC-SSO-Routing
+  - my-mongo
+  - my-mysql
