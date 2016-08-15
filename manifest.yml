@@ -1,4 +1,4 @@
 applications:
 - name: julbra-node-env
   description : Simple demo that prints the server's environment variables.
-  mem: 24M
+  memory: 24M

@@ -10,9 +10,11 @@ var http = require('http'),
     port = process.env.PORT || 8080;
 
 setInterval(function() {
-    var msg = moment().format('MMMM Do YYYY, h:mm:ss a');
-    for (var i = 0; i < 20; i++) {
-        console.log(msg + ' ' + randomWords({ min: 3, max: 10 }));
+    for (var i = 0; i < 1; i++) {
+        var phrase = randomWords({ min: 3, max: 10 }).join(' ');
+        phrase = phrase.charAt(0).toUpperCase() + phrase.slice(1);
+        // console.log(phrase);
+        console.log('Sprint Demo: ' + phrase);
     }
 }, 100);
 
