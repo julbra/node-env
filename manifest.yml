@@ -3,8 +3,6 @@
 # We have created a delivery pipeline
 applications:
 # We have reserved a name/route for your app
-- name: node-env
-  host: node-env
-  domain: hcf.julbra.stacktest.io
-  description : Simple demo that prints the server's environment variables.
-  memory: 31M
+- name: Julien
+  host: Julien
+  domain: hcf.hsc.stacktest.io
