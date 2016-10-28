@@ -4,7 +4,7 @@
 applications:
 # We have reserved a name/route for your app
 - name: Julbra Node Env
-  host: julbra-node-env
+  host: Julbra-Node-Env
   domain: hcf.hsc.stacktest.io
   description : Simple demo that prints the server's environment variables.
   memory: 31M
