@@ -14,7 +14,7 @@ setInterval(function() {
         var phrase = randomWords({ min: 3, max: 10 }).join(' ');
         // phrase = phrase.charAt(0).toUpperCase() + phrase.slice(1);
         // console.log(phrase);
-        console.log('The Raven says: ' + phrase);
+        console.log('Quoth the Raven: ' + phrase);
     }
 }, 100);
 
