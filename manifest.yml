@@ -3,8 +3,7 @@
 # We have created a delivery pipeline
 applications:
 # We have reserved a name/route for your app
-- name: FooBarBaz
-  host: FooBarBaz
-  domain: hcf.hsc.stacktest.io
+- name: Test2
+  host: Test2
   description : Simple demo that prints the server's environment variables.
   memory: 31M
