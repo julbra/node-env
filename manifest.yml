@@ -8,3 +8,4 @@ applications:
   domain: hcf.hscdemo.stacktest.io
   description : Simple demo that prints the server's environment variables.
   memory: 31M
+  disk_quota: 128M
