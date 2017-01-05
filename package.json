@@ -2,7 +2,7 @@
   "name": "node-env",
   "version": "1.0.0",
   "engines": {
-    "node": "5.x.x",
+    "node": "6.x.x",
     "npm": "3.x.x"
   },
   "dependencies": {
