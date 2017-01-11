@@ -3,9 +3,9 @@
 # We have created a delivery pipeline
 applications:
 # We have reserved a name/route for your app
-- name: Julbra Node Env Demo
-  host: Julbra-Node-Env-Demo
-  domain: hcf.hscdemo.stacktest.io
+- name: node-env
+  host: node-env
+  domain: hcf.hsc.stacktest.io
   description : Simple demo that prints the server's environment variables.
-  memory: 31M
+  memory: 64M
   disk_quota: 128M
