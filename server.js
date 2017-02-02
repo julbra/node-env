@@ -15,6 +15,7 @@ setInterval(function() {
         // phrase = phrase.charAt(0).toUpperCase() + phrase.slice(1);
         // console.log(phrase);
         console.log('Quoth the Raven: ' + phrase);
+        console.error('Quoth the Raven: ' + phrase);
     }
 }, 100);
 
